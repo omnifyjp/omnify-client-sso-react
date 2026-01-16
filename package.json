@@ -1,5 +1,5 @@
 {
-  "name": "@omnifyjp/omnify-client-sso-react",
+  "name": "@famgia/omnify-client-sso-react",
   "version": "1.0.0",
   "description": "React components and hooks for Omnify SSO integration",
   "keywords": [
