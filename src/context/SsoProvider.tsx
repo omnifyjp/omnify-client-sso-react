@@ -228,7 +228,10 @@ export function SsoProvider({ children, config, onAuthChange }: SsoProviderProps
             await logout();
 
             // Then redirect to Console logout
-            const redirectUri = redirectTo ?? window.location.origin;
+            // Convert relative path to absolute URL (e.g., '/' → 'https://example.com/')
+            const redirectUri = redirectTo
+                ? new URL(redirectTo, window.location.origin).toString()
+                : window.location.origin;
             const logoutUrl = new URL('/sso/logout', config.consoleUrl);
             logoutUrl.searchParams.set('redirect_uri', redirectUri);
 
