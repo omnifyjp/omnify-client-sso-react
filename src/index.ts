@@ -55,3 +55,6 @@ export type {
 export type { UseAuthReturn } from './hooks/useAuth';
 export type { UseOrganizationReturn } from './hooks/useOrganization';
 export type { UseSsoReturn } from './hooks/useSso';
+
+// Query Keys (for TanStack Query / React Query)
+export { ssoQueryKeys } from './queryKeys';
