@@ -1,0 +1,27 @@
+# Source files (only publish dist/)
+src/
+tests/
+
+# Config files
+tsconfig.json
+vitest.config.ts
+.eslintrc*
+
+# Test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+__tests__/
+coverage/
+
+# Dev files
+.gitignore
+.editorconfig
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
